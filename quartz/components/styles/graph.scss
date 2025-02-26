@@ -1,6 +1,10 @@
 @use "../../styles/variables.scss" as *;
 
 .graph {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
   & > h3 {
     font-size: 1rem;
     margin: 0;
@@ -10,7 +14,8 @@
     border-radius: 5px;
     border: 1px solid var(--lightgray);
     box-sizing: border-box;
-    height: 250px;
+    height: 200px; // Reduced height for bottom placement
+    width: 100%;   // Ensure full width
     margin: 0.5em 0;
     position: relative;
     overflow: hidden;
